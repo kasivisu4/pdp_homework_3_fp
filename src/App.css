@@ -1,5 +1,12 @@
-.App {
-  margin: 50px;
+.title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(253, 32, 16);
+}
+
+.container {
+  margin: 30px;
   display: flex;
 }
 

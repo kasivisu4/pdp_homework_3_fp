@@ -2,13 +2,12 @@ import React from "react";
 import "./CartView.css";
 
 export default function CartView(props) {
-  function total() {
+  function count_total() {
     let total = 0;
-    {
-      Array.from(props.cart).map(([name, { product, quantity }]) => {
-        total += quantity * product.price;
-      });
-    }
+
+    Array.from(props.cart).forEach(([name, { product, quantity }]) => {
+      total += quantity * product.price;
+    });
 
     return <div>{total}</div>;
   }
@@ -76,7 +75,7 @@ export default function CartView(props) {
               ))}
               <tr>
                 <td colSpan="2">Total Price: </td>
-                <td>{total()}</td>
+                <td>{count_total()}</td>
               </tr>
             </tbody>
           </table>

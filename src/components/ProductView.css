@@ -16,25 +16,24 @@
   margin-top: 20px;
 }
 
-.title {
-  color: rgba(10, 10, 10, 0.2);
+.product-title {
+  color: rgba(196, 8, 118, 0.549);
   font-family: "Sofia", sans-serif;
-  font-weight: bold;
-  font-size: 100%;
+  font-size: 200%;
+  margin-left: 20px;
 }
 
 .price {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 20px;
-  color: rgba(0, 0, 0, 0.2);
-  font-family: "Sofia", sans-serif;
-  font-weight: bold;
+  color: rgba(77, 4, 4, 0.608);
+  font-weight: bolder;
   font-size: 150%;
 }
 
 .button {
   color: white;
-  padding: 16px 32px;
+  padding: 16px 16px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
@@ -43,12 +42,62 @@
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  margin-left: 450px;
-  font-family: "Sofia", sans-serif;
+  margin-left: 575px;
   font-weight: bold;
   background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190703/pngtree-abstract-black-background-with-diagonal-line-texture-modern-look-image_282853.jpg");
 }
 
 .button:hover {
+  opacity: 1;
+}
+
+.page_button_prev {
+  background-color: rgb(248, 12, 12);
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Sofia", sans-serif;
+  font-weight: bold;
+  float: left;
+  margin-top: 20px;
+}
+
+.page_button_prev:hover {
+  opacity: 1;
+}
+
+.page_view {
+  margin-top: 20px;
+  margin-left: 400px;
+  font-weight: bold;
+}
+
+.page_button_next {
+  background-color: rgb(248, 12, 12);
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 50px;
+  font-family: "Sofia", sans-serif;
+  font-weight: bold;
+  float: right;
+  margin-top: 20px;
+}
+
+.page_button_next:hover {
   opacity: 1;
 }
