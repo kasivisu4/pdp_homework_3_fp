@@ -1,0 +1,17 @@
+table,
+th,
+td {
+  width: 100%;
+  border: 5px solid rgba(248, 70, 215, 0.2);
+  border-collapse: collapse;
+  border-style: outset;
+}
+
+.quantity-button {
+  transition-duration: 0.4s;
+}
+
+.quantity-button {
+  background-color: #3927f6; /* Green */
+  color: white;
+}

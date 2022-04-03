@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ProductView from "./components/ProductView.js";
+import CartView from "./components/CartView.js";
+import { useState } from "react";
+import { data } from "./models/Data.js";
 
 function App() {
+  let [product, setProduct] = useState(data);
+  let [cart, setCart] = useState(new Map());
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="flex-child magenta">
+        <ProductView product={product} cart={cart} setCart={setCart} />
+      </div>
+      <div className="flex-child green">
+        <CartView cart={cart} setCart={setCart} />
+      </div>
     </div>
   );
 }

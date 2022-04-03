@@ -1,0 +1,54 @@
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(254, 135, 232, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.title {
+  color: rgba(10, 10, 10, 0.2);
+  font-family: "Sofia", sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.price {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.2);
+  font-family: "Sofia", sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.button {
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 450px;
+  font-family: "Sofia", sans-serif;
+  font-weight: bold;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190703/pngtree-abstract-black-background-with-diagonal-line-texture-modern-look-image_282853.jpg");
+}
+
+.button:hover {
+  opacity: 1;
+}
